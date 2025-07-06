@@ -4,7 +4,7 @@ hide:
 ---
 <details>
   <summary>Click to expand image</summary>
-  <img src="images/signal.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
+  <img src="/rajeshrk/images/signal.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
 </details>
 <details>
 

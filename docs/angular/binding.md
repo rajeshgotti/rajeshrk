@@ -7,15 +7,15 @@ hide:
 
 <details>
   <summary>PropertyBinding</summary>
-  <img src="images/propertyBinding.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
+  <img src="/rajeshrk/images/propertyBinding.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
 </details>
 <details>
   <summary>NgContent</summary>
-  <img src="images/ngContent.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
+  <img src="/rajeshrk/images/ngContent.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
 </details>
 <details>
   <summary>StyleBinding</summary>
-  <img src="images/stylebinding.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
+  <img src="/rajeshrk/images/stylebinding.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
 </details>
 
 ## syntax: [Property]  

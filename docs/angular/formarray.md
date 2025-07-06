@@ -62,12 +62,12 @@ addItem(): void {
 ```
 <details>
   <summary>FormArray Using ForEach()</summary>
-  <img src="images/formArray.png" alt="Output image" style="max-width: 100%; height: auto;" />
+  <img src="/rajeshrk/images/formArray.png" alt="Output image" style="max-width: 100%; height: auto;" />
 </details>
 
 <!-- <details>
   <summary>RealTime Notes</summary>
-  <img src="images/formArray.png" alt="Output image" style="max-width: 100%; height: auto;" /> -->
+  <img src="/rajeshrk/images/formArray.png" alt="Output image" style="max-width: 100%; height: auto;" /> -->
 </details>
 
 ### RealTimeEx
