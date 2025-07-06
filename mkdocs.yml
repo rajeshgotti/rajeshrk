@@ -1,5 +1,4 @@
-site_name: My Docs
-site_name: Rajesh Angular Document
+site_name: Rajesh Angular Document 
 # https://<your-username>.github.io/<repo-name>/files/angular-ag-grid.docx
 theme:
   name: material
