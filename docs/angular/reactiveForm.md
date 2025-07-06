@@ -6,16 +6,16 @@ hide:
 
 <details>
   <summary>Notes Example 1</summary>
-  <img src="/images/patch.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
+  <img src="images/patch.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
 </details>
 <details>
   <summary>Notes Example 2</summary>
-  <img src="/images/PatchWithPost.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
+  <img src="images/PatchWithPost.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
 </details>
 
 <details>
   <summary>RForm with Validtion</summary>
-  <img src="/images/reactiveform&validatioon.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
+  <img src="images/reactiveform&validatioon.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
 </details>
 
 ```title="html.file"

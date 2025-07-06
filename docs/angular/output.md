@@ -13,15 +13,15 @@ hide:
 ```
 <details>
   <summary>Click to expand image</summary>
-  <img src="/images/output.png" alt="Output image" style="max-width: 100%; height: auto;" />
+  <img src="images/output.png" alt="Output image" style="max-width: 100%; height: auto;" />
 </details>
 <details>
   <summary>Click to expand image</summary>
-  <img src="/images/output2.png" alt="Output image" style="max-width: 100%; height: auto;" />
+  <img src="images/output2.png" alt="Output image" style="max-width: 100%; height: auto;" />
 </details>
 <details>
   <summary>Notes image</summary>
-  <img src="/images/inputOutPut.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
+  <img src="images/inputOutPut.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
 </details>
 
 

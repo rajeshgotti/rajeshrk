@@ -2,6 +2,12 @@
 hide:
  - toc
 ---
+<details>
+  <summary>Click to expand image</summary>
+  <img src="images/signal.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
+</details>
+<details>
+
 ``` title="LocalDataSourceService.ts"
  in this service class create your signal y to create in service file only means if u create in 
  service then only one object will be created 
