@@ -11,6 +11,20 @@ hide:
 ->  @Output gurinchi teliyali ante inko 2 terms teliyali 
    1. EventEmitter  2. EventBinding
 ```
+<details>
+  <summary>Click to expand image</summary>
+  <img src="/images/output.png" alt="Output image" style="max-width: 100%; height: auto;" />
+</details>
+<details>
+  <summary>Click to expand image</summary>
+  <img src="/images/output2.png" alt="Output image" style="max-width: 100%; height: auto;" />
+</details>
+<details>
+  <summary>Notes image</summary>
+  <img src="/images/inputOutPut.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
+</details>
+
+
 
 ```
 Step:1 import @Output & EventEmitter in ChildComponent
@@ -83,8 +97,9 @@ add-location.html
   </app-address>
 ```
 ## Realtime ex:
-``` 
-    --PresentMedicationComponent1.ts--
+```title="PresentMedicationComponent1.ts"
+// this is one[child] Compoent and below one is another(parent) component 
+    
  @Output() saveEvent=new EventEmitter(); // child-parent
 
  this.historyService.addPresentMedicationHistory(forms).pipe(takeUntil(this.onDestroy$)).subscribe(res => {
@@ -107,7 +122,8 @@ add-location.html
         },
         disableClose: true,
       })
-      dialogRef.componentInstance.saveEvent.pipe(takeUntil(this.onDestroy$)).subscribe({ //here we are using that emited data
+      dialogRef.componentInstance.saveEvent.pipe(takeUntil(this.onDestroy$)).
+       subscribe({ // SaveEvent , here we are using that emited data  
         next: (res) => {
           this.getHomeMedications();
         }

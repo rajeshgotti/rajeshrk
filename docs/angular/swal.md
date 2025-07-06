@@ -4,10 +4,14 @@ hide:
 ---
 ```
 ---swal .fire--
+STEP:1 SWAL & SNACKBAR 
 import Swal from 'sweetalert2';
 import { MatSnackBar } from '@angular/material/snack-bar';
+
+step:2 use SnackBar in Constructor with private
 constructor(private snackbar:MatSnackBar);
 
+step:3 take one method here write code if result is success then res.value else to elsePart
  discontinueClick(item: any) {
     this.medStatus='D';
     Swal.fire({

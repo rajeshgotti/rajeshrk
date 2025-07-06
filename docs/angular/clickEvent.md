@@ -106,6 +106,12 @@ hide:
 
 
 ### 02:mat-autoComplete
+
+<details>
+  <summary>Click to expand image</summary>
+  <img src="/images/autocomplete.png" alt="Output image" style="max-width: 100%; height: auto;" />
+</details>
+
 ``` title="html.file"
 <mat-autoComplete (optionSelected)="selectedData($event)">
    <mat-option *ngFor="let item of data" >

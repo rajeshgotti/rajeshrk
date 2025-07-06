@@ -25,13 +25,20 @@ nav:
    - Input: angular/input.md
    - OutPut: angular/output.md
    - ViewChild: angular/viewchild.md
+   - FormArray: angular/formarray.md  
+   - ReactiveForms: angular/reactiveForm.md  
    - Signal: angular/signal.md
-   - CellRender: angular/cellrender.md
    - MatDialog: angular/matdilog.md
    - SwalFire: angular/swal.md
    - ClickEvent: angular/clickEvent.md
    - GitHub: angular/github.md
    - ShortCutKeys: angular/shortcutkeys.md
- - File:
+  
+ - AG- GRID:
+   - AG-Grid: Ag-grid/ag-grid.md  
+   - CellRender: Ag-grid/cellrender.md
+ - ONLY IMAGES:
+   - images: Only-images/onlyimages.md  
+ - PDF Files:
    - Files: files/file.md  
    

@@ -5,6 +5,19 @@ hide:
 
 ### PropertyBinding ante ts file vuna data ni Html lo cupinchadam
 
+<details>
+  <summary>PropertyBinding</summary>
+  <img src="/images/propertyBinding.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
+</details>
+<details>
+  <summary>NgContent</summary>
+  <img src="/images/ngContent.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
+</details>
+<details>
+  <summary>StyleBinding</summary>
+  <img src="/images/stylebinding.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
+</details>
+
 ## syntax: [Property]  
 
 ```
@@ -39,14 +52,12 @@ hide:
 ```
  ## RealTime example:
 ``` title="html.file"
- <mat-card-actions class="buttonsStyle">
      <button mat-stroked-button color="primary" (click)="continueClick(item)"
        [disabled]="item?.medicationStatus?.toLowerCase() === 'current'">Continue</button>
          <button mat-stroked-button color="warn" (click)="discontinueClick(item)"
            [disabled]="item?.medicationStatus?.toLowerCase() === 'discontinued'">Discontinue</button>
           <button mat-stroked-button color="accent" (click)="modifyClick(item)">Modify</button>
-  </mat-card-actions>
-				
+			
 ```
 ### Realtime Example 2
 
@@ -58,6 +69,7 @@ hide:
      'continue-button' : item.medicationStatus === 'Discontinued' ? 'discontinue-button' : ''">
       {{ item.medicationStatus }}
    </button>
+
 	---STYLE.SCSS--			  
  .continue-button {
     background-color: #c8e6c9 !important;
@@ -84,7 +96,7 @@ hide:
 ```
 
 
-## ClassBinding
+### ClassBinding  => syntax:[class]="isAcive"
 ``` title="ts file"
   isAcive:boolean=false;  //variable:type=value
 ```
@@ -94,12 +106,9 @@ hide:
 Note: condition true aite redColor false aite blueColor
 
       ----scss file---
-.redColor{
-    background-color: red;
-}
-.blueColor{
-    background-color: blueviolet;
-}
+   .redColor{ background-color: red; }
+
+   .blueColor{background-color: blueviolet;}
 ```
 ### ex:2 TO apply multiple styles we use [ngClass]
 ``` title="ts.file"

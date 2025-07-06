@@ -1,0 +1,1364 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../swal/">
+      
+      
+        <link rel="next" href="../github/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>ClickEvent - Rajesh Angular Document</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#01-ngmodelchange" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Rajesh Angular Document" class="md-header__button md-logo" aria-label="Rajesh Angular Document" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Rajesh Angular Document
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ClickEvent
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../binding/" class="md-tabs__link">
+          
+  
+  
+  Angular
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../files/file/" class="md-tabs__link">
+          
+  
+  
+  File
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Rajesh Angular Document" class="md-nav__button md-logo" aria-label="Rajesh Angular Document" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Rajesh Angular Document
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Angular
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Angular
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../binding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Binding
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../input/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Input
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../output/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    OutPut
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../viewchild/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ViewChild
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../signal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Signal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cellrender/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CellRender
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../matdilog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MatDialog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../swal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SwalFire
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    ClickEvent
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClickEvent
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#01-ngmodelchange" class="md-nav__link">
+    <span class="md-ellipsis">
+      01: ngModelChange()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#realtime-ex-ngmodelchangeonchangeevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      RealTime Ex: ngModelChange="onChange(event)"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#realtime-ex2" class="md-nav__link">
+    <span class="md-ellipsis">
+      RealTime Ex:2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#realtime-ex3" class="md-nav__link">
+    <span class="md-ellipsis">
+      RealTime Ex:3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02mat-autocomplete" class="md-nav__link">
+    <span class="md-ellipsis">
+      02:mat-autoComplete
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#realtime-ex-mat-autocomplete-optionselectedonchangesourceevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      RealTime Ex: mat-autoComplete (optionSelected)="onchangeSource($event)"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03-mat-select-selectionchangedemo" class="md-nav__link">
+    <span class="md-ellipsis">
+      03: mat-select (selectionChange)="demo()"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#realtime-ex-mat-select-selectionchangeonmergechangeevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      RealTime ex: mat-select (selectionChange)="onMergeChange($event)"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-ng-select-changedemo" class="md-nav__link">
+    <span class="md-ellipsis">
+      4: ng-Select (change)="demo()"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#realtime-ex-mat-form-field-changeonchangename" class="md-nav__link">
+    <span class="md-ellipsis">
+      RealTime Ex: mat-form-field (change)="onChangeName()"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-date-change-datechangeonfromdatetodatechangeevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 : date change (dateChange)="onFromDateToDateChange($event)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../github/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GitHub
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shortcutkeys/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ShortCutKeys
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    File
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            File
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../files/file/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Files
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#01-ngmodelchange" class="md-nav__link">
+    <span class="md-ellipsis">
+      01: ngModelChange()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#realtime-ex-ngmodelchangeonchangeevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      RealTime Ex: ngModelChange="onChange(event)"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#realtime-ex2" class="md-nav__link">
+    <span class="md-ellipsis">
+      RealTime Ex:2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#realtime-ex3" class="md-nav__link">
+    <span class="md-ellipsis">
+      RealTime Ex:3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02mat-autocomplete" class="md-nav__link">
+    <span class="md-ellipsis">
+      02:mat-autoComplete
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#realtime-ex-mat-autocomplete-optionselectedonchangesourceevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      RealTime Ex: mat-autoComplete (optionSelected)="onchangeSource($event)"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03-mat-select-selectionchangedemo" class="md-nav__link">
+    <span class="md-ellipsis">
+      03: mat-select (selectionChange)="demo()"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#realtime-ex-mat-select-selectionchangeonmergechangeevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      RealTime ex: mat-select (selectionChange)="onMergeChange($event)"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-ng-select-changedemo" class="md-nav__link">
+    <span class="md-ellipsis">
+      4: ng-Select (change)="demo()"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#realtime-ex-mat-form-field-changeonchangename" class="md-nav__link">
+    <span class="md-ellipsis">
+      RealTime Ex: mat-form-field (change)="onChangeName()"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-date-change-datechangeonfromdatetodatechangeevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 : date change (dateChange)="onFromDateToDateChange($event)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+  <h1>ClickEvent</h1>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a> 01: ngModelChange()  ==&gt; (ngModelChange)=&quot;onChange($event)&quot;
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a> 02: mat-autoComplete ==&gt; (optionSelected)=&quot;selectedData($event)&quot;
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a> 03: mat-select       ==&gt; (selectionChange)=&quot;demo()&quot;
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a> 04: ng-Select        ==&gt; (change)=&quot;demo()&quot;
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a> 05: date change      ==&gt; (dateChange)=&quot;onFromDateToDateChange($event)
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a> 06: input
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a> 07: focus()
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a> 08: blur()
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a> 09: keyup()
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a> 10: keydown()
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a> 11: keypress()
+</code></pre></div>
+<h3 id="01-ngmodelchange">01: ngModelChange()</h3>
+<div class="highlight"><span class="filename">html.file</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a> &lt;input matInput formControlName=&quot;fm&quot; (ngModelChange)=&quot;onChange($event)&quot;&gt;
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    ---ts.file--
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a> onChange(e):void{
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    ---
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    ---
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a> }
+</code></pre></div>
+<h3 id="realtime-ex-ngmodelchangeonchangeevent">RealTime Ex:   ngModelChange="onChange(event)"</h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>## Syntax : &lt;input [(ngModel)]=&quot;yourVariable&quot; (ngModelChange)=&quot;onChange($event)&quot; /&gt;
+</code></pre></div>
+<div class="highlight"><span class="filename">html.file</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a> Ex:1
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  &lt;input [(ngModel)]=&quot;username&quot; (ngModelChange)=&quot;onUsernameChange($event)&quot; placeholder=&quot;Enter username&quot; /&gt;
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>            &lt;p&gt;You typed: {{ username }}&lt;/p&gt;
+</code></pre></div>
+<div class="highlight"><span class="filename">ts.file</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a> export class AppComponent {
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>  username = &#39;&#39;;
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>  onUsernameChange(value: string) {
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    console.log(&#39;Username changed to:&#39;, value);
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    // You can do anything here, like validation, API call, etc.
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>  }}
+</code></pre></div></p>
+<h3 id="realtime-ex2">RealTime Ex:2</h3>
+<p><div class="highlight"><span class="filename">html.file</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>&lt;mat-form-field class=&quot;example-full-width&quot; appearance=&quot;outline&quot;&gt;
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    &lt;mat-label&gt;Edu Date&lt;/mat-label&gt;
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>       &lt;input matInput  matTooltip=&quot;MM/dd/yyyy&quot; appMaskDate [type]=&quot;&#39;datetime&#39;&quot;
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>          [max]=&quot;ToDayDate&quot; [owlDateTime]=&quot;time1&quot; formControlName=&quot;edudate&quot; 
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>          (ngModelChange)=&quot;onChange($event,&#39;S&#39;)&quot; placeholder=&quot;Edu Date&quot;&gt;
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>       &lt;mat-icon matSuffix [owlDateTimeTrigger]=&quot;time1&quot; class=&quot;date-icon&quot;&gt;schedule&lt;/mat-icon&gt;
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>          &lt;owl-date-time #time1&gt;&lt;/owl-date-time&gt;
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>&lt;/mat-form-field&gt;
+</code></pre></div>
+<div class="highlight"><span class="filename">ts.file</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>  onChange(event: any, type) {
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    // console.log(&quot;change event&quot;,event)
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    if (type == &quot;P&quot;) {
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>      let sDate = this.amendmentForm.get(&#39;requestedDate&#39;).value;
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>      // console.log(&quot;dropdown select&quot;, event, sDate)
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    }
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    else {
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>      let sDate = this.amendmentForm.get(&#39;requestedDate&#39;).value;
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>      // console.log(&quot;dropdown select&quot;, event, sDate)
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>      //   console.log(&quot;dropdown select&quot;, event, sDate)
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>    }                   
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>  }
+</code></pre></div></p>
+<h3 id="realtime-ex3">RealTime Ex:3</h3>
+<p><div class="highlight"><span class="filename">html.file</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>&lt;ng-container&gt;
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>   &lt;div class=&quot;icu-element-focus-control&quot;&gt;
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>     &lt;div *ngIf=&quot;vital?.element?.controlData?.length&gt;0&quot;&gt;
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>      &lt;select *ngIf=&quot;vital?.element?.controlData[0]?.heartRhythm?.length&gt;0&quot;
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>        placeholder=&quot;Rhythm &quot; class=&quot;icu-element-focus&quot; [(ngModel)]=&quot;vital[header.value].rhytham&quot;
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>          (ngModelChange)=&quot;onChange1(header?.value,icuIndex,index,item.componentName,item)&quot;&gt;
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>         &lt;option *ngFor=&quot;let item1 of vital?.element?.controlData[0]?.heartRhythm;trackBy: trackByFn&quot;
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>            [value]=&quot;item1.heartRhythmID&quot;&gt;
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>              &lt;!-- &lt;input type=&quot;checkbox&quot;&gt; --&gt;
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>         &lt;/option&gt;
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>       &lt;/select&gt;
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>      &lt;/div&gt;
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>   &lt;/div&gt;
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>&lt;/ng-container&gt;
+</code></pre></div>
+<div class="highlight"><span class="filename">ts.file</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a> onChange12(vitalUnitId,icuIndex,index,item,vitalSignDate,data){
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    if(item.value&amp;&amp;item.unitId){
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>   let convertedValue=null;}     
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a> }
+</code></pre></div></p>
+<h3 id="02mat-autocomplete">02:mat-autoComplete</h3>
+<div class="highlight"><span class="filename">html.file</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>&lt;mat-autoComplete (optionSelected)=&quot;selectedData($event)&quot;&gt;
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>   &lt;mat-option *ngFor=&quot;let item of data&quot; &gt;
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>   --- ts.file---
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>  selectedData(event:MatAutoCompleteSelectedEvent){
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>     ---
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>     ---
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>  } 
+</code></pre></div>
+<h3 id="realtime-ex-mat-autocomplete-optionselectedonchangesourceevent">RealTime Ex: mat-autoComplete (optionSelected)="onchangeSource($event)"</h3>
+<p><div class="highlight"><span class="filename">html.file</span><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>  &lt;mat-form-field appearance=&quot;outline&quot; *ngIf=&quot;amendmentForm.get(&#39;requestType&#39;).value != 4&quot;&gt;
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>     &lt;mat-label&gt;Requested By&lt;/mat-label&gt;
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>      &lt;input aria-label=&quot;requestedBy&quot; type=&quot;text&quot; placeholder=&quot;Requested By&quot; 
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>       (input)=&quot;getResquestBy()&quot; matInput formControlName=&quot;requestedBy&quot; 
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>       [matAutocomplete]=&quot;auto&quot;&gt; 
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>   &lt;mat-autocomplete #auto=&quot;matAutocomplete&quot; [displayWith]=&quot;displayFn&quot; 
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>          (optionSelected)=&quot;onchangeSource($event)&quot;&gt;  //this is changeEvent 
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>      &lt;mat-option *ngFor=&quot;let option of options&quot; [value]=&quot;option&quot;&gt;
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>                {{option.userName}}
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>       &lt;/mat-option&gt;
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>    &lt;/mat-autocomplete&gt;
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a> &lt;/mat-form-field&gt;                          
+</code></pre></div>
+<div class="highlight"><span class="filename">ts.file</span><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a> // here import matAutoComplete,formFileldModule,InputModule
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>import { MatAutocompleteModule } from &#39;@angular/material/autocomplete&#39;;
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>import { MatFormFieldModule } from &#39;@angular/material/form-field&#39;;
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>import { MatInputModule } from &#39;@angular/material/input&#39;;
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>import { ReactiveFormsModule } from &#39;@angular/forms&#39;;
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>import { CommonModule } from &#39;@angular/common&#39;; 
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>  onchangeSource(event) {   //this is ur method
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>    // debugger
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>    this.userName = event.option.value.userName;
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>    // console.log(&quot;########&quot;,this.userName);
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>    if (event?.option.value.userName == this.userName) {
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>      this.amendmentForm.patchValue({
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a>        userType: event.option.value.roleName,
+<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a>      })
+<a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a>    }
+<a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a>  }
+</code></pre></div>
+  ### EX:2
+<div class="highlight"><span class="filename">html</span><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Note: here [displayWith]=&quot;anyName&quot; it is used, what to dispaly in the view
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>                         loop motam lo yem dispaly avvali anedi e [ dispalyWith] lo istam 
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a> &lt;mat-autocomplete #auto=&quot;matAutocomplete&quot; autoActiveFirstOption 
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>    (optionSelected)=&quot;onDrugSelected($event.option.value)&quot; [displayWith]=&quot;displayDrugName&quot;&gt;
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>  &lt;mat-option class=&quot;custom_line_height_generic&quot; *ngFor=&quot;let drug of drugSuggestions&quot; [value]=&quot;drug&quot;&gt;
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>    &lt;div class=&quot;drug-info-block&quot;&gt;
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>      &lt;div&gt;&lt;span class=&quot;label-sky&quot;&gt;Generic Name :&lt;/span&gt; {{ drug.drug }}&lt;/div&gt;
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>       &lt;div style=&quot;display: flex; flex-wrap: wrap; gap: 16px;&quot;&gt;
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>        &lt;div&gt;&lt;span class=&quot;label-red&quot;&gt;Brand Name:&lt;/span&gt; {{ drug.brandname }}&lt;/div&gt;
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>        &lt;div&gt;&lt;span class=&quot;label-sky&quot;&gt;RxNorm:&lt;/span&gt; {{ drug.rxNormCode || &#39;NONE&#39; }}&lt;/div&gt;
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>        &lt;div&gt;&lt;span class=&quot;label-red&quot;&gt;NDC :&lt;/span&gt; {{ drug.ndc || &#39;NONE&#39; }}&lt;/div&gt;
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>      &lt;/div&gt;
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>    &lt;/div&gt;
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>   &lt;hr&gt;
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>  &lt;/mat-option&gt;
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a> &lt;/mat-autocomplete&gt;
+</code></pre></div>
+<div class="highlight"><span class="filename">ts.file</span><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a> displayDrugName(drug: any): string {  //this is ur displayWith here we are dispalying drugname
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>    return drug?.drugname ?? drug ?? &#39;&#39;; 
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a> }//retung drug ane loop lo vuna drugname ni dispaly chesunam okavela drugname lekunte then ?? 
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>      ante motam drugObj ne dispaly chestam okavela drugObj null or undefined vunte then &#39;&#39; 
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>    empty string ni dispaly chestunam
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>    ----     ---  
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>   drugSuggestions : any[] = [];
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>  onDrugNameInput(event: Event): void {
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>    const inputValue = (event.target as HTMLInputElement).value;
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>    if (inputValue?.length &gt; 2) {
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>      this.historyService.getWsDrugSuggestions(inputValue, &#39;DRUG&#39;, &#39;F&#39;).pipe(takeUntil(this.onDestroy$))
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>        .subscribe({
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>          next: (res: any) =&gt; {
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>            this.drugSuggestions  = res?.body || [];
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>          },
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a>          error: (err) =&gt; {
+<a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a>            console.error(&#39;Drug name search error:&#39;, err);
+<a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a>            this.drugSuggestions  = [];
+<a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a>          },
+<a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a>        });
+<a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a>      }else {
+<a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a>      this.drugSuggestions  = [];
+<a id="__codelineno-13-25" name="__codelineno-13-25" href="#__codelineno-13-25"></a>    }
+<a id="__codelineno-13-26" name="__codelineno-13-26" href="#__codelineno-13-26"></a>
+<a id="__codelineno-13-27" name="__codelineno-13-27" href="#__codelineno-13-27"></a>    if(!this.pharmacyForm.get(&#39;drugName&#39;).value){
+<a id="__codelineno-13-28" name="__codelineno-13-28" href="#__codelineno-13-28"></a>      this.SearchDrugId=&#39;0&#39;
+<a id="__codelineno-13-29" name="__codelineno-13-29" href="#__codelineno-13-29"></a>    }
+<a id="__codelineno-13-30" name="__codelineno-13-30" href="#__codelineno-13-30"></a>  }
+<a id="__codelineno-13-31" name="__codelineno-13-31" href="#__codelineno-13-31"></a>  onDrugSelected(event){
+<a id="__codelineno-13-32" name="__codelineno-13-32" href="#__codelineno-13-32"></a>    let Data = event 
+<a id="__codelineno-13-33" name="__codelineno-13-33" href="#__codelineno-13-33"></a>    this.SearchDrugId= Data?.drugid
+<a id="__codelineno-13-34" name="__codelineno-13-34" href="#__codelineno-13-34"></a>   if(Data.drug){
+<a id="__codelineno-13-35" name="__codelineno-13-35" href="#__codelineno-13-35"></a>    this.pharmacyService.getDuplicateCheck(&#39;Generic&#39;,Data?.drug ?? Data,(this.drugLibraryId ?? 0))
+<a id="__codelineno-13-36" name="__codelineno-13-36" href="#__codelineno-13-36"></a>    .pipe(takeUntil(this.onDestroy$)).subscribe({
+<a id="__codelineno-13-37" name="__codelineno-13-37" href="#__codelineno-13-37"></a>      next:(res)=&gt;{
+<a id="__codelineno-13-38" name="__codelineno-13-38" href="#__codelineno-13-38"></a>    if (res &amp;&amp; res?.body?.value===&quot;Already Exists&quot; ){
+<a id="__codelineno-13-39" name="__codelineno-13-39" href="#__codelineno-13-39"></a>        Swal.fire({
+<a id="__codelineno-13-40" name="__codelineno-13-40" href="#__codelineno-13-40"></a>          title: &#39;Medication Already Present&#39;,
+<a id="__codelineno-13-41" name="__codelineno-13-41" href="#__codelineno-13-41"></a>          text: &#39;This medication is already in the list.&#39;,
+<a id="__codelineno-13-42" name="__codelineno-13-42" href="#__codelineno-13-42"></a>          icon: &#39;info&#39;,
+<a id="__codelineno-13-43" name="__codelineno-13-43" href="#__codelineno-13-43"></a>          confirmButtonText: &#39;OK&#39;
+<a id="__codelineno-13-44" name="__codelineno-13-44" href="#__codelineno-13-44"></a>        });
+<a id="__codelineno-13-45" name="__codelineno-13-45" href="#__codelineno-13-45"></a>        this.pharmacyForm.reset()
+<a id="__codelineno-13-46" name="__codelineno-13-46" href="#__codelineno-13-46"></a>        this.drugSuggestions  = [];
+<a id="__codelineno-13-47" name="__codelineno-13-47" href="#__codelineno-13-47"></a>       }
+<a id="__codelineno-13-48" name="__codelineno-13-48" href="#__codelineno-13-48"></a>       else {
+<a id="__codelineno-13-49" name="__codelineno-13-49" href="#__codelineno-13-49"></a>        // this.pharmacyForm?.reset()
+<a id="__codelineno-13-50" name="__codelineno-13-50" href="#__codelineno-13-50"></a>         this.pharmacyForm?.patchValue({
+<a id="__codelineno-13-51" name="__codelineno-13-51" href="#__codelineno-13-51"></a>           barndName: Data?.brandname,
+<a id="__codelineno-13-52" name="__codelineno-13-52" href="#__codelineno-13-52"></a>           deaClassCode: this.deaClassCodeUnits?.
+<a id="__codelineno-13-53" name="__codelineno-13-53" href="#__codelineno-13-53"></a>           find(ele =&gt; ele.meD_REF_DEA_CD === numberAttribute(Data?.deaclasscode)) ?? null,
+<a id="__codelineno-13-54" name="__codelineno-13-54" href="#__codelineno-13-54"></a>           dosageForm: Data?.dosageform ? numberAttribute(Data?.dosageform) : null,
+<a id="__codelineno-13-55" name="__codelineno-13-55" href="#__codelineno-13-55"></a>           rxNormCode: Data?.rxNormCode,
+<a id="__codelineno-13-56" name="__codelineno-13-56" href="#__codelineno-13-56"></a>           routeName: this.routes?.find(ele =&gt; ele.meD_ROUTE_ID == Data?.route) ?? null,
+<a id="__codelineno-13-57" name="__codelineno-13-57" href="#__codelineno-13-57"></a>           ndc: Data?.ndc,
+<a id="__codelineno-13-58" name="__codelineno-13-58" href="#__codelineno-13-58"></a>           theraputicCategory: Data?.theraputiccategory,
+<a id="__codelineno-13-59" name="__codelineno-13-59" href="#__codelineno-13-59"></a>           drugName:Data?.drug,
+<a id="__codelineno-13-60" name="__codelineno-13-60" href="#__codelineno-13-60"></a>           medStrength:Data?.meD_STRENGTH ?? null,
+<a id="__codelineno-13-61" name="__codelineno-13-61" href="#__codelineno-13-61"></a>           medUnit:Data?.meD_UNIT ?? null,
+<a id="__codelineno-13-62" name="__codelineno-13-62" href="#__codelineno-13-62"></a>           PackageDes:Data?.pd ?? null,
+<a id="__codelineno-13-63" name="__codelineno-13-63" href="#__codelineno-13-63"></a>           PackageUnit:Data?.hcfA_UNIT ?? null,
+<a id="__codelineno-13-64" name="__codelineno-13-64" href="#__codelineno-13-64"></a>           PackageSize:Data?.ps ?? null,
+<a id="__codelineno-13-65" name="__codelineno-13-65" href="#__codelineno-13-65"></a>          })
+<a id="__codelineno-13-66" name="__codelineno-13-66" href="#__codelineno-13-66"></a>        }
+<a id="__codelineno-13-67" name="__codelineno-13-67" href="#__codelineno-13-67"></a>         this.selectedOptions = [];
+<a id="__codelineno-13-68" name="__codelineno-13-68" href="#__codelineno-13-68"></a>      },
+<a id="__codelineno-13-69" name="__codelineno-13-69" href="#__codelineno-13-69"></a>     error:(err)=&gt;{
+<a id="__codelineno-13-70" name="__codelineno-13-70" href="#__codelineno-13-70"></a>        this.SearchDrugId=&#39;0&#39;
+<a id="__codelineno-13-71" name="__codelineno-13-71" href="#__codelineno-13-71"></a>      }
+<a id="__codelineno-13-72" name="__codelineno-13-72" href="#__codelineno-13-72"></a>    })
+<a id="__codelineno-13-73" name="__codelineno-13-73" href="#__codelineno-13-73"></a>  }
+<a id="__codelineno-13-74" name="__codelineno-13-74" href="#__codelineno-13-74"></a>
+<a id="__codelineno-13-75" name="__codelineno-13-75" href="#__codelineno-13-75"></a>  }
+</code></pre></div>
+ ## Ex:3
+<div class="highlight"><span class="filename">html</span><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>&lt;div class=&quot;col-12 col-xl-4 col-lg-4 col-md-4 col-sm-6&quot;&gt;
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>  &lt;mat-form-field class=&quot;example-full-width&quot; appearance=&quot;outline&quot;&gt;
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>     &lt;mat-label&gt;Medicine Name&lt;/mat-label&gt;
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>     &lt;input aria-label=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Medications&quot; aria-label=&quot;Number&quot; 
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>          matInput required (blur)=&quot;onBlur()&quot; formControlName=&quot;drug&quot; [matAutocomplete]=&quot;auto&quot; &gt;
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>              &lt;mat-autocomplete   [displayWith]=&quot;displayFn&quot; #auto=&quot;matAutocomplete&quot;
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>                (optionSelected)=&quot;medicationSelectedEvent($event)&quot; &gt;
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>                &lt;mat-option  *ngFor=&quot;let item of problems&quot; [value]=&quot;item&quot; [title]=&quot;item.drug&quot;&gt;
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>                  {{item | tallManLettering}} ||
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>                  {{item?.theraputiccategory}} || {{item?.meD_STRENGTH}} 
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>                  ({{item?.dataprovider}})
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>                &lt;/mat-option&gt;
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>              &lt;/mat-autocomplete&gt;
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a>              &lt;mat-error *ngIf=&quot; !getdrug().valid &amp;&amp;  (getdrug().dirty || getdrug().touched ||
+<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a>                isSubmit) &quot; id=&quot;validation-dob-error&quot;
+<a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a>                 class=&quot;error jquery-validation-error small invalid-feedback&quot;&gt;
+<a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a>                 Medications are required
+<a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a>              &lt;/mat-error&gt;
+<a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a>  &lt;/mat-form-field&gt;
+<a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a>  &lt;span style=&quot;color: red&quot; *ngIf=&quot;medicationStatusData?.status===true&quot;&gt;
+<a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a>     {{medicationStatusData?.message}}
+<a id="__codelineno-14-22" name="__codelineno-14-22" href="#__codelineno-14-22"></a>  &lt;/span&gt;
+</code></pre></div>
+<div class="highlight"><span class="filename">ts.file</span><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>  displayFn(obj) {  //this is ur displaywith name
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>    return obj?.drug ? obj?.drug : obj;
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>  }
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>---in problems res.body we have data---
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>  problems: Drug[];
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>  getProblemSuggestions(value) {
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>    this.problems = [];
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>    if (value?.length &gt; 2) {
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>      // console.log(this.presentMedicationForm.value?.drug)
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>      // this.historyService.getMedicationsSuggestions(value).pipe(debounceTime(400),takeUntil(this.onDestroy$))
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>      .subscribe(res =&gt; {
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>        this.historyService.getWsDrugSuggestions(value, &#39;RxNorm&#39;,&#39;&#39;)
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>        .pipe(debounceTime(400),takeUntil(this.onDestroy$)).subscribe(res =&gt; {   
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>        this.problems = res.body;
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a>      })
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a>    })
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a>    }
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a>  }
+<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a>
+<a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a>  ------ ----------
+<a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a>  medicationSelectedEvent(event) {
+<a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a>  // console.log(event);
+<a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a>    this.presentMedicationForm.patchValue({
+<a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a>      dosage: this.dosage[0].dosage,
+<a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a>     dosageForm: (this.dosageForms.find(ele =&gt; +ele?.meD_DOSAGE_FORM_ID === +event.option.value?.dosageform)?
+<a id="__codelineno-15-26" name="__codelineno-15-26" href="#__codelineno-15-26"></a>        .meD_DOSAGE_FORM_DESC),
+<a id="__codelineno-15-27" name="__codelineno-15-27" href="#__codelineno-15-27"></a>      route: this.routes.find(ele =&gt; +ele?.meD_ROUTE_ID === +event.option.value?.route),
+<a id="__codelineno-15-28" name="__codelineno-15-28" href="#__codelineno-15-28"></a>      source: this.medicationSourcess[0].medicationSourceName,
+<a id="__codelineno-15-29" name="__codelineno-15-29" href="#__codelineno-15-29"></a>      dosageUnits:event.option.value.dosing_unit,
+<a id="__codelineno-15-30" name="__codelineno-15-30" href="#__codelineno-15-30"></a>      rxNormCode:event.option?.value?.rxNormCode,
+<a id="__codelineno-15-31" name="__codelineno-15-31" href="#__codelineno-15-31"></a>      dosageQ:event.option?.value?.meD_STRENGTH,
+<a id="__codelineno-15-32" name="__codelineno-15-32" href="#__codelineno-15-32"></a>      medUnit:(this.drugMedUnits.find(ele =&gt; +ele?.medUnit === +event.option.value?.meD_UNIT))
+<a id="__codelineno-15-33" name="__codelineno-15-33" href="#__codelineno-15-33"></a>       ??event.option.value?.meD_UNIT,
+<a id="__codelineno-15-34" name="__codelineno-15-34" href="#__codelineno-15-34"></a>    });
+<a id="__codelineno-15-35" name="__codelineno-15-35" href="#__codelineno-15-35"></a>    this.medicationsStatus(event?.option?.value?.drugid);
+<a id="__codelineno-15-36" name="__codelineno-15-36" href="#__codelineno-15-36"></a>     let routeValue = ((this.presentMedicationForm.get(&#39;route&#39;)?.value)?.meD_ROUTE_ABBR).trim();
+<a id="__codelineno-15-37" name="__codelineno-15-37" href="#__codelineno-15-37"></a>    // console.log(routeValue);
+<a id="__codelineno-15-38" name="__codelineno-15-38" href="#__codelineno-15-38"></a>
+<a id="__codelineno-15-39" name="__codelineno-15-39" href="#__codelineno-15-39"></a>    if(((this.presentMedicationForm.get(&#39;route&#39;)?.value)?.meD_ROUTE_ABBR).trim() === &quot;IV&quot;){
+<a id="__codelineno-15-40" name="__codelineno-15-40" href="#__codelineno-15-40"></a>     this.presentMedicationForm.patchValue({
+<a id="__codelineno-15-41" name="__codelineno-15-41" href="#__codelineno-15-41"></a>      frequency:this.frequency[0].freq
+<a id="__codelineno-15-42" name="__codelineno-15-42" href="#__codelineno-15-42"></a>     })
+<a id="__codelineno-15-43" name="__codelineno-15-43" href="#__codelineno-15-43"></a>    }else{
+<a id="__codelineno-15-44" name="__codelineno-15-44" href="#__codelineno-15-44"></a>      this.presentMedicationForm.patchValue({
+<a id="__codelineno-15-45" name="__codelineno-15-45" href="#__codelineno-15-45"></a>        frequency:this.frequency[1].freq
+<a id="__codelineno-15-46" name="__codelineno-15-46" href="#__codelineno-15-46"></a>       })
+<a id="__codelineno-15-47" name="__codelineno-15-47" href="#__codelineno-15-47"></a>    }
+<a id="__codelineno-15-48" name="__codelineno-15-48" href="#__codelineno-15-48"></a>    this.triggerValidations();
+<a id="__codelineno-15-49" name="__codelineno-15-49" href="#__codelineno-15-49"></a>  }
+</code></pre></div></p>
+<h3 id="03-mat-select-selectionchangedemo">03: mat-select (selectionChange)="demo()"</h3>
+<div class="highlight"><span class="filename">html.file</span><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>&lt;mat-select [ngModel]=&quot; &quot; (selectChange)=&quot;onSelectionChange($event)&quot;&gt;
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>   ---ts.file--
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>   onSelectionChange(event){
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>    ---
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>    ---
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>   }
+</code></pre></div>
+<h3 id="realtime-ex-mat-select-selectionchangeonmergechangeevent">RealTime ex: mat-select (selectionChange)="onMergeChange($event)"</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a> &lt;mat-form-field class=&quot;example-full-width&quot; appearance=&quot;outline&quot;&gt;
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>    &lt;mat-label&gt;Merge Type&lt;/mat-label&gt;
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>     &lt;mat-select [(ngModel)]=&quot;mergeTypeIndex&quot; name=&quot;mergeType&quot;
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>          [disableOptionCentering]=&quot;true&quot; (selectionChange)=&quot;onMergeChange($event)&quot; &gt;
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>        &lt;mat-option *ngFor=&quot;let list of mergeType&quot; [value]=&quot;list.id&quot;&gt;
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>           {{list.field}}
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>        &lt;/mat-option&gt;
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>     &lt;/mat-select&gt;
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a> &lt;/mat-form-field&gt; 
+</code></pre></div>
+<h3 id="4-ng-select-changedemo">4: ng-Select (change)="demo()"</h3>
+<div class="highlight"><span class="filename">ts.file</span><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a> &lt;ng-select bindValue=&quot;&quot; (change)=&quot;demo()&quot;&gt;
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>        (Or)
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a> &lt;raido-button (change)=&quot;radioChange()&quot;&gt;
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>  ---ts.file--
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a> demo(){
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>    ---
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a> }          
+</code></pre></div>
+<h3 id="realtime-ex-mat-form-field-changeonchangename">RealTime Ex: mat-form-field (change)="onChangeName()"</h3>
+<div class="highlight"><span class="filename">html.file</span><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>  &lt;div class=&quot;mat-form-field-block&quot;&gt;
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>    &lt;ng-select  dropdownPosition=&quot;top&quot;  class=&quot;ng-select-custom&quot; 
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>     [items]=&quot;sourcerecords&quot; bindLabel=&quot;sourceName&quot; bindValue=&quot;sourceId&quot; 
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>     formControlName=&quot;requestType&quot; placeholder=&quot;Source&quot;  appearance=&quot;outline&quot; 
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>     (change)=&quot;onSelectionChange($event);onSelectionChangeData($event)&quot; aria-label=&quot;source&quot;
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>      [inputAttrs]=&quot;{ &#39;placeholder&#39;:&#39;&#39;,&#39;autocomplete&#39;: &#39;off&#39;,&#39;aria-label&#39;:&#39;Request Type&#39;,autocorrect&#39;:&#39;off&#39; }&quot;&gt;
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>    &lt;/ng-select&gt;
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>  &lt;/div&gt;
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>        ---for radioButton--
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>    &lt;mat-radio-group aria-label=&quot;Select an option&quot; (change)=&quot;onChangeName()&quot; 
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>       [(ngModel)]=&quot;name&quot; [ngModelOptions]=&quot;{standalone: true}&quot;&gt;
+<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>      &lt;mat-radio-button value=&quot;Retail&quot;&gt;Retail&lt;/mat-radio-button&gt;
+<a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a>        &lt;mat-radio-button value=&quot;Other&quot;&gt;Other&lt;/mat-radio-button&gt;
+<a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a>    &lt;/mat-radio-group&gt;
+</code></pre></div>
+<h3 id="5-date-change-datechangeonfromdatetodatechangeevent">5 : date change (dateChange)="onFromDateToDateChange($event)</h3>
+<p><div class="highlight"><span class="filename">html.file</span><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a> &lt;mat-form-field appearance=&quot;outline&quot; class=&quot;example-full-width&quot;&gt;
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>    &lt;mat-label&gt;From Date&lt;/mat-label&gt;
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>     &lt;input matInput [matDatepicker]=&quot;fromDatePicker&quot; placeholder=&quot;MM/DD/YYYY&quot; [(ngModel)]=&quot;fromDate&quot;    
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>        appMaskDate (dateChange)=&quot;onFromDateToDateChange($event)&quot;
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>         [max]=&quot;toDate&quot; /&gt;
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>        &lt;!-- (keyup)=&quot;formatDate($event)&quot; --&gt;
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>       &lt;mat-datepicker-toggle matSuffix [for]=&quot;fromDatePicker&quot;&gt;&lt;/mat-datepicker-toggle&gt;
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>         &lt;mat-datepicker #fromDatePicker&gt;&lt;/mat-datepicker&gt;
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>  &lt;/mat-form-field&gt;
+</code></pre></div>
+<div class="highlight"><span class="filename">ts.file</span><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>    onFromDateToDateChange(event: MatDatepickerInputEvent&lt;Date, unknown&gt;): void {
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>    this.getInOrOutPatient();
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>  }
+</code></pre></div></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.instant.preview", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "content.code.copy"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

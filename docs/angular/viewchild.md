@@ -3,6 +3,17 @@ hide:
  - toc
 ---
 
+
+<details>
+  <summary>Click to expand image</summary>
+  <img src="/images/viewChild2.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
+</details>
+<details>
+  <summary>Click to expand image</summary>
+  <img src="/images/viewChild.jpg" alt="Output image" style="max-width: 100%; height: auto;" />
+</details>
+
+
 ```
 @ViewChild  
 → child నుండి parent కి data transfer చేయాలంటే 3 ways ఉన్నాయి  
